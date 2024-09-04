@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      label, input { font-size: 42px; }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>    
   <body>
-      <label>password:
-        <input type="text" onchange="checkme(event)"></input>
-      </label>
+    <label>password:
+      <input type="text" onchange="checkme(event)"></input>
+    </label>
     <script>
       function checkme(event) {
         if (event.target.value === 'moon') {
